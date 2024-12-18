@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 20px;
+    padding: 16px;
     font-size: 14px;
     color: hsl(243, 100%, 93%);
 }   
@@ -129,7 +129,7 @@ main{
 
 /* Footer */
 .attribution{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     
 }
