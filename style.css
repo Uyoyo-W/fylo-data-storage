@@ -1,0 +1,233 @@
+body {
+    font-family: "Raleway", sans-serif;
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    font-size: 14px;
+    color: hsl(243, 100%, 93%);
+}   
+
+
+main{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    position: relative;
+}
+.fylo-top{
+    padding: 40px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    border-top-right-radius: 6rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    width: 200px;
+}
+.icon{
+    background-color: hsl(229, 57%, 11%);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.fylo-bottom{
+    padding: 40px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.used{
+    color: hsl(243, 100%, 93%);
+}
+
+.storage1{
+    font-weight: 700;
+}
+
+.storage {
+    width: 100%;
+}
+
+.bar{
+    /* width: 100%; */
+    height: 20px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.inner-bar{
+    width: 80%;
+    height: 14px;
+    border-radius: 20px;
+    margin-left: 2px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.circle{
+    border-radius: 100%;
+    background-color: #fff;
+    height: 10px;
+    width: 10px;
+    margin-right: 2px;
+}
+
+.numbers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.storage-bottom{
+    position: absolute;
+    bottom: -30px; /* Move it slightly below the container */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: #202846;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.storage-bottom p{
+    color: hsl(229, 7%, 55%);
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.storage2{
+    font-size: 35px;
+    color: hsl(0, 0%, 0%);
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+/* Footer */
+.attribution{
+    position: absolute;
+    bottom: 0;
+    
+}
+.attribution span{ 
+    font-size: 11px; 
+    text-align: center; 
+    
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (min-width: 768px) {
+    body{
+        background-image: url(./images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: contain;
+        background-color: hsl(229, 57%, 11%);
+        padding: 0;
+    }
+
+    main{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .fylo-top{
+        width: 50%;
+        height: fit-content;
+    }
+    .fylo-bottom{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        position: relative;
+        align-self: last baseline;
+    }
+
+    .used{
+        align-self: flex-start;
+    }
+    
+    .storage-bottom{
+        position: absolute;
+        top: -30px; /* Adjust for larger screens */
+        right: 40px;/* Aligns it to the right edge */
+        left: auto;
+        transform: none;
+        height: fit-content;
+        border-bottom-right-radius: 0;
+    }   
+    
+    .storage-bottom::after{
+        content: '';
+        position: absolute;
+        bottom: -10px; 
+        right: 0px; 
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent; /* Left side transparent */
+        border-right: 0px solid transparent; /* Right side transparent */
+        border-top: 10px solid white
+    } 
+    
+
+    .attribution{
+        position: fixed;
+    }
+}
+
+/* @media (min-width: 1000px) {
+    body{
+        background-image: url(./images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: auto;
+        background-color: hsl(229, 57%, 11%);
+        padding: 0;
+    }
+
+    main{
+        display: flex;
+        width: 70%;
+    }
+    .fylo-top{
+        width: 40%;
+    }
+    .fylo-bottom{
+        width: 60%;
+    }
+    .attribution{
+        position: fixed;
+    }
+    .storage-bottom{
+        
+    }
+} */
