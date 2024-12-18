@@ -204,30 +204,9 @@ main{
     }
 }
 
-/* @media (min-width: 1000px) {
-    body{
-        background-image: url(./images/bg-desktop.png);
-        background-repeat: no-repeat;
-        background-position: 100% 100%;
-        background-size: auto;
-        background-color: hsl(229, 57%, 11%);
-        padding: 0;
-    }
-
+@media (min-width: 1000px) {
     main{
         display: flex;
         width: 70%;
     }
-    .fylo-top{
-        width: 40%;
-    }
-    .fylo-bottom{
-        width: 60%;
-    }
-    .attribution{
-        position: fixed;
-    }
-    .storage-bottom{
-        
-    }
-} */
+} 
