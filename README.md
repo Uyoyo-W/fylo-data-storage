@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/Uyoyo-W/bento-grid
-- Live Site URL: https://bento-grid-task-solution.netlify.app/
+- Solution URL: https://github.com/Uyoyo-W/fylo-data-storage
+- Live Site URL: https://fylo-data-storage-task-solution.netlify.app/
 
 ## My process
 
