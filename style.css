@@ -207,6 +207,6 @@ main{
 @media (min-width: 1000px) {
     main{
         display: flex;
-        width: 70%;
+        width: 65%;
     }
 } 
